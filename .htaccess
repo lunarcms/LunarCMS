@@ -1,0 +1,15 @@
+##### NOTE: Replace 'RewriteBase /' with 'RewriteBase /subfolder/' where subfolder is the path to Lunar CMS.
+
+RewriteEngine On
+RewriteBase /
+
+# From Ultimate SEO URLs
+RewriteRule ^(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*).html$ index\.php?page=$1&$2=$3&$4=$5&$6=$7&$8=$9&$10=$11&$12=$13&$14=$15 [L]
+RewriteRule ^(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*).html$ index\.php?page=$1&$2=$3&$4=$5&$6=$7&$8=$9&$10=$11&$12=$13 [L]
+RewriteRule ^(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*).html$ index\.php?page=$1&$2=$3&$4=$5&$6=$7&$8=$9&$10=$11 [L]
+RewriteRule ^(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*).html$ index\.php?page=$1&$2=$3&$4=$5&$6=$7&$8=$9 [L]
+RewriteRule ^(.*)<(.*)>(.*)<(.*)>(.*)<(.*)>(.*).html$ index\.php?page=$1&$2=$3&$4=$5&$6=$7 [L]
+RewriteRule ^(.*)<(.*)>(.*)<(.*)>(.*).html$ index\.php?page=$1&$2=$3&$4=$5 [L]
+RewriteRule ^(.*)<(.*)>(.*).html$ index\.php?page=$1&$2=$3 [L]
+RewriteRule ^!Accounts-(.*).html$ index\.php?page=!Accounts&mode=$1 [L]
+RewriteRule ^(.*).html$ index\.php?page=$1 [L]
